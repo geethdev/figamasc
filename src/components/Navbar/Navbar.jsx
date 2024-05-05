@@ -1,4 +1,5 @@
 import Logo from "../../assets/website/logo.png";
+import DarkMode from "./DarkMode";
 
 export const Navlinks = [
   {
@@ -20,7 +21,7 @@ export const Navlinks = [
 const Navbar = () => {
   return (
     <>
-      <nav className="w-full shadow-md">
+      <nav className="w-full shadow-md dark:bg-dark dark:text-white">
         <div className="container ">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold duration-200 cursor-pointer text-primary animate-pulse hover:scale-105">
@@ -34,7 +35,7 @@ const Navbar = () => {
               />
             </div>
             <div>
-              <ul className="flex gap-8">
+              <ul className="flex items-center gap-8">
                 {Navlinks.map(({ id, name, link }) => (
                   <li
                     key={id}
@@ -43,6 +44,7 @@ const Navbar = () => {
                     <a href={link}>{name}</a>
                   </li>
                 ))}
+                <DarkMode />
               </ul>
             </div>
           </div>
