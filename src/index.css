@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .link {
+    @apply cursor-pointer hover:underline;
+  }
+  .button-outline {
+    @apply px-6 py-2 tracking-wider duration-500 border-2 rounded-md border-primary hover:bg-primary/80 hover:text-black text-primary;
+  }
+  .primary-btn {
+    @apply inline-block px-6 py-2 text-white transition duration-500 rounded-md bg-primary hover:bg-primary/80;
+  }
+}
