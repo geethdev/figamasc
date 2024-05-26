@@ -2,14 +2,14 @@ import BannerImg from "../../assets/website/about.png";
 
 const About = () => {
   return (
-    <div className="duration-300 py-14 dark:bg-black bg-slate-100 ">
+    <div className="py-16 duration-300 bg-white dark:bg-dark dark:text-white">
       <div className="container">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 place-items-center">
           <div data-aos="fade-up">
             <img
               src={BannerImg}
               alt=""
-              className="sm:scale-125 sm:-translate-x-11 max-h-[300px] drop-shadow-[2px_10px_6px_rgba(0,0,0,0.50)] mx-auto"
+              className="sm:scale-105 sm:-translate-x-11 max-h-[300px] drop-shadow-[2px_10px_6px_rgba(0,0,0,0.50)] mx-auto"
             />
           </div>
           <div>
